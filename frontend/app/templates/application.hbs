@@ -1,7 +1,10 @@
 {{page-title "Frontend"}}
 
-{{! The following component displays Ember's default welcome message. }}
-{{!-- This works and you don't need a 'WelcomePage' to prove it. --}}
-{{! Feel free to remove this! }}
+<div class="container">
+  <NavBar />
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>
 
 {{outlet}}
