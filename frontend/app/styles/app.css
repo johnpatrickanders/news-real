@@ -229,6 +229,7 @@ p {
 
 .entry {
   margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #f6f6f6;
   padding: 20px 25px;
   display: flex;
@@ -321,8 +322,8 @@ p {
   flex-wrap: wrap;
 }
 
-.details .summary {
-  text-overflow: clip;
+.entry.detail {
+    max-width: 1rem;
 }
 
 .entry h3 {
