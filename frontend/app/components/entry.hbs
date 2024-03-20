@@ -1,21 +1,21 @@
 <article class="entry">
      <Entry::Image
-    src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
-    alt="A picture of Grand Old Mansion"
+    src={{@entry.image}}
+    alt={{@rental.title}}
   />
   <div class="details">
-    <h3>Appeals Court to Decide if Texas Can Begin Arresting Migrants</h3>
+    <h3>{{@entry.title}}</h3>
     <div class="detail source">
-      <span>Source:</span> The New York Times
+      <span>Source:</span> {{@entry.source}}
     </div>
     <div class="detail type">
-      <span>Type:</span> Breaking
+      <span>Type:</span> {{@entry.type}}
     </div>
     <div class="detail summary">
-      <span>Summary:</span> <p>The court halted a new state law after it briefly took effect. <br>Judges will now hear arguments on whether it can be enforced during the appeals process.</p>
+      <span>Summary:</span> {{@entry.summary}}
     </div>
     <div class="detail take">
-      <span>John's take:</span> I'm really bothered by this. Why does Abbott push for these laws?
+      <span>Contributor's Take:</span> {{@entry.take}}
     </div>
   </div>
 </article>
